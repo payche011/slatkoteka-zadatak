@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+
+  @media only screen and(max-width: $bp-largest) {
+    font-size: 50%;
+  }
+
+  @media only screen and(max-width: $bp-medium) {
+    font-size: 55%;
+  }
+
+  @media only screen and(max-width: $bp-small) {
+    font-size: 60%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  line-height: 1.6;
+
+  &.noscroll {
+    overflow: hidden;
+  }
+}
+
+::selection {
+  background: $secondaryColor;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $primaryFont;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}

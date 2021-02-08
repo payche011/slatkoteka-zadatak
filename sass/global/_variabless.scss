@@ -1,0 +1,30 @@
+$primaryColor: #ffebf2;
+$secondaryColor: #f650a0;
+$darkGrayColor: #666666;
+$lightGray: #dddddd;
+$lightBlack: #333333;
+$primaryFont: "Secular One", sans-serif;
+$secondaryFont: "Varela Round", sans-serif;
+$transition: 0.3s all linear;
+
+// Visibility
+
+.hide-for-mobile {
+  // hide for tab and mob
+  @media (max-width: 64em) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @media (min-width: 64.01em) {
+    display: none;
+  }
+}
+
+// RESPONSIVE
+
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px
+$bp-small: 37.5em; // 600px
